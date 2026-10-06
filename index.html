@@ -1,0 +1,40 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Marija Vlaisavljević | Portfolio</title><style>
+:root{--wine:#741b3f;--ink:#181417;--muted:#6d6368;--cream:#fbf7f5;--line:#eadde2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,calc(100% - 40px));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(251,247,245,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font:700 25px Georgia,serif;color:var(--wine)}
+.nav-links{display:flex;gap:26px;font-size:14px;font-weight:650}.nav-links a:hover{color:var(--wine)}
+.hero{min-height:calc(100vh - 72px);display:grid;grid-template-columns:1.15fr .85fr;gap:68px;align-items:center;padding:70px 0}
+.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--wine)}
+h1,h2,h3{font-family:Georgia,serif}h1{font-size:clamp(52px,7vw,90px);line-height:.98;letter-spacing:-.045em;margin:18px 0 22px}
+.lead{font-size:20px;margin:0 0 12px}.intro{max-width:650px;color:var(--muted);font-size:16px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:12px 19px;border:1px solid var(--wine);border-radius:999px;font-weight:700;font-size:14px}
+.btn.primary{background:var(--wine);color:white}.photo{position:relative}.photo:before{content:"";position:absolute;inset:-16px 16px 16px -16px;border:1px solid #cba9b6;border-radius:28px;z-index:-1}
+.photo img{width:100%;max-height:650px;object-fit:cover;object-position:center 20%;display:block;border-radius:28px;box-shadow:0 25px 70px rgba(67,25,40,.14)}
+section{padding:88px 0;border-top:1px solid var(--line)}.section-title{display:grid;grid-template-columns:.65fr 1.35fr;gap:48px;margin-bottom:42px}
+h2{font-size:42px;line-height:1.08;margin:0}.section-title p{margin:0;color:var(--muted);font-size:17px}
+.chips{display:flex;gap:10px;flex-wrap:wrap}.chip{background:#fff;border:1px solid var(--line);padding:10px 15px;border-radius:999px;font-size:14px;font-weight:650}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:22px;padding:25px;min-height:265px;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-3px);box-shadow:0 15px 35px rgba(60,25,38,.08)}.card small{color:var(--wine);font-weight:800;letter-spacing:.1em}
+.card h3{font-size:24px;margin:17px 0 9px}.card p{color:var(--muted);font-size:14px}.tech{margin-top:auto;color:var(--wine);font-size:12px;font-weight:800;text-transform:uppercase}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:white;border:1px solid var(--line);border-radius:22px;padding:27px}.panel h3{margin:0 0 8px;font-size:23px}.panel p{margin:5px 0;color:var(--muted)}
+.contact{background:var(--wine);color:white;border-radius:28px;padding:48px}.contact h2{font-size:46px}.contact p{opacity:.82}.contact .btn{border-color:white;color:white}
+footer{padding:28px 0;color:var(--muted);font-size:13px}
+@media(max-width:800px){.nav-links{display:none}.hero{grid-template-columns:1fr;gap:44px;padding:52px 0}.photo{max-width:480px}.section-title,.grid,.two{grid-template-columns:1fr}section{padding:65px 0}}
+</style></head><body>
+<nav><div class="container nav-inner"><a class="brand" href="#">MV.</a><div class="nav-links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></div></div></nav>
+<main>
+<div class="container hero"><div><div class="kicker">Vienna · Austria</div><h1>Marija<br>Vlaisavljević</h1><p class="lead">Information Systems &amp; Technology Graduate</p><p class="intro">Interested in IT solutions, analytical problem solving and digital technologies — combining structured thinking, technology and a strong motivation to learn.</p><div class="actions"><a class="btn primary" href="#projects">View my work</a><a class="btn" href="https://github.com/marijavlaisavljevic" target="_blank">GitHub ↗</a><a class="btn" href="#contact">Contact me</a></div></div><div class="photo"><img src="profile.jpeg" alt="Marija Vlaisavljević"></div></div>
+<section id="about"><div class="container section-title"><h2>About me</h2><p>I am an Information Systems &amp; Technology graduate based in Vienna. My background combines software development, databases, information systems and analytical thinking. I am interested in roles where technology, structured problem solving and real business needs come together.</p></div></section>
+<section id="skills"><div class="container"><div class="section-title"><h2>Skills</h2><p>A technical foundation built through university projects and practical coursework.</p></div><div class="chips"><span class="chip">Java</span><span class="chip">SQL</span><span class="chip">MySQL</span><span class="chip">OOP</span><span class="chip">JUnit</span><span class="chip">UML</span><span class="chip">R</span><span class="chip">Git &amp; GitHub</span><span class="chip">Information Systems</span><span class="chip">Analytical Thinking</span></div></div></section>
+<section id="projects"><div class="container"><div class="section-title"><h2>Selected projects</h2><p>Academic and personal work demonstrating my technical foundation and approach to solving problems.</p></div><div class="grid">
+<article class="card"><small>01 · FEATURED</small><h3>Automotive Equipment Store System</h3><p>Desktop information system for managing customers, automotive equipment and orders, including validation and automated testing.</p><div class="tech">Java · Swing · MySQL · JUnit · UML</div></article>
+<a class="card" href="https://github.com/marijavlaisavljevic/smartbite" target="_blank"><small>02 · GITHUB ↗</small><h3>SmartBite</h3><p>A project from my GitHub portfolio showcasing web technologies and application development.</p><div class="tech">TypeScript · Web Technologies</div></a>
+<a class="card" href="https://github.com/marijavlaisavljevic/sweet-steps" target="_blank"><small>03 · GITHUB ↗</small><h3>Sweet Steps</h3><p>Mobile recipe application connecting the interface with cloud-backed data services.</p><div class="tech">Ionic · TypeScript · Firebase REST API</div></a>
+</div></div></section>
+<section id="education"><div class="container"><div class="section-title"><h2>Education &amp; languages</h2><p>Academic background and languages for an international working environment.</p></div><div class="two"><div class="panel"><h3>BSc · Information Systems &amp; Technology</h3><p>Faculty of Organizational Sciences, University of Belgrade</p><p>Information systems, software development, databases and information security.</p></div><div class="panel"><h3>Languages</h3><p><strong>English</strong> · C1</p><p><strong>German</strong> · A2, currently improving</p><p><strong>Serbian</strong> · Native</p></div></div></div></section>
+<section id="contact"><div class="container"><div class="contact"><div class="kicker" style="color:#f0cad7">Let's connect</div><h2>Open to IT opportunities in Vienna.</h2><p>Explore my projects and technical work on GitHub.</p><div class="actions"><a class="btn" href="https://github.com/marijavlaisavljevic" target="_blank">GitHub ↗</a></div></div></div></section>
+</main><footer><div class="container">© 2026 Marija Vlaisavljević · Vienna, Austria</div></footer></body></html>
