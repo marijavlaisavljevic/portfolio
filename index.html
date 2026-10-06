@@ -12,29 +12,33 @@
   --ink:#181417;
   --muted:#6d6368;
   --cream:#fbf7f5;
-  --line:#eadde2
+  --line:#eadde2;
 }
 
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box;
+}
 
-html{scroll-behavior:smooth}
+html{
+  scroll-behavior:smooth;
+}
 
 body{
   margin:0;
   background:var(--cream);
   color:var(--ink);
   font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  line-height:1.6
+  line-height:1.6;
 }
 
 a{
   text-decoration:none;
-  color:inherit
+  color:inherit;
 }
 
 .container{
   width:min(1120px,calc(100% - 40px));
-  margin:auto
+  margin:auto;
 }
 
 nav{
@@ -43,30 +47,30 @@ nav{
   z-index:20;
   background:rgba(251,247,245,.94);
   backdrop-filter:blur(12px);
-  border-bottom:1px solid var(--line)
+  border-bottom:1px solid var(--line);
 }
 
 .nav-inner{
   height:72px;
   display:flex;
   align-items:center;
-  justify-content:space-between
+  justify-content:space-between;
 }
 
 .brand{
   font:700 25px Georgia,serif;
-  color:var(--wine)
+  color:var(--wine);
 }
 
 .nav-links{
   display:flex;
   gap:26px;
   font-size:14px;
-  font-weight:650
+  font-weight:650;
 }
 
 .nav-links a:hover{
-  color:var(--wine)
+  color:var(--wine);
 }
 
 .hero{
@@ -75,7 +79,7 @@ nav{
   grid-template-columns:1.15fr .85fr;
   gap:68px;
   align-items:center;
-  padding:70px 0
+  padding:70px 0;
 }
 
 .kicker{
@@ -83,36 +87,36 @@ nav{
   letter-spacing:.18em;
   text-transform:uppercase;
   font-weight:800;
-  color:var(--wine)
+  color:var(--wine);
 }
 
 h1,h2,h3{
-  font-family:Georgia,serif
+  font-family:Georgia,serif;
 }
 
 h1{
   font-size:clamp(52px,7vw,90px);
   line-height:.98;
   letter-spacing:-.045em;
-  margin:18px 0 22px
+  margin:18px 0 22px;
 }
 
 .lead{
   font-size:20px;
-  margin:0 0 12px
+  margin:0 0 12px;
 }
 
 .intro{
   max-width:650px;
   color:var(--muted);
-  font-size:16px
+  font-size:16px;
 }
 
 .actions{
   display:flex;
   gap:12px;
   flex-wrap:wrap;
-  margin-top:30px
+  margin-top:30px;
 }
 
 .btn{
@@ -120,16 +124,16 @@ h1{
   border:1px solid var(--wine);
   border-radius:999px;
   font-weight:700;
-  font-size:14px
+  font-size:14px;
 }
 
 .btn.primary{
   background:var(--wine);
-  color:white
+  color:white;
 }
 
 .photo{
-  position:relative
+  position:relative;
 }
 
 .photo:before{
@@ -138,7 +142,7 @@ h1{
   inset:-16px 16px 16px -16px;
   border:1px solid #cba9b6;
   border-radius:28px;
-  z-index:-1
+  z-index:-1;
 }
 
 .photo img{
@@ -148,37 +152,37 @@ h1{
   object-position:center 20%;
   display:block;
   border-radius:28px;
-  box-shadow:0 25px 70px rgba(67,25,40,.14)
+  box-shadow:0 25px 70px rgba(67,25,40,.14);
 }
 
 section{
   padding:88px 0;
-  border-top:1px solid var(--line)
+  border-top:1px solid var(--line);
 }
 
 .section-title{
   display:grid;
   grid-template-columns:.65fr 1.35fr;
   gap:48px;
-  margin-bottom:42px
+  margin-bottom:42px;
 }
 
 h2{
   font-size:42px;
   line-height:1.08;
-  margin:0
+  margin:0;
 }
 
 .section-title p{
   margin:0;
   color:var(--muted);
-  font-size:17px
+  font-size:17px;
 }
 
 .chips{
   display:flex;
   gap:10px;
-  flex-wrap:wrap
+  flex-wrap:wrap;
 }
 
 .chip{
@@ -187,13 +191,13 @@ h2{
   padding:10px 15px;
   border-radius:999px;
   font-size:14px;
-  font-weight:650
+  font-weight:650;
 }
 
 .grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:18px
+  gap:18px;
 }
 
 .card{
@@ -204,29 +208,29 @@ h2{
   min-height:265px;
   display:flex;
   flex-direction:column;
-  transition:.2s ease
+  transition:.2s ease;
 }
 
 .card:hover{
   transform:translateY(-3px);
   box-shadow:0 15px 35px rgba(60,25,38,.08);
-  border-color:#d8b9c5
+  border-color:#d8b9c5;
 }
 
 .card small{
   color:var(--wine);
   font-weight:800;
-  letter-spacing:.1em
+  letter-spacing:.1em;
 }
 
 .card h3{
   font-size:24px;
-  margin:17px 0 9px
+  margin:17px 0 9px;
 }
 
 .card p{
   color:var(--muted);
-  font-size:14px
+  font-size:14px;
 }
 
 .tech{
@@ -234,86 +238,155 @@ h2{
   color:var(--wine);
   font-size:12px;
   font-weight:800;
-  text-transform:uppercase
+  text-transform:uppercase;
 }
 
 .two{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:18px
+  gap:18px;
 }
 
 .panel{
   background:white;
   border:1px solid var(--line);
   border-radius:22px;
-  padding:27px
+  padding:27px;
 }
 
 .panel h3{
   margin:0 0 8px;
-  font-size:23px
+  font-size:23px;
 }
 
 .panel p{
   margin:5px 0;
-  color:var(--muted)
+  color:var(--muted);
 }
 
 .contact{
   background:var(--wine);
   color:white;
   border-radius:28px;
-  padding:48px
+  padding:48px;
 }
 
 .contact h2{
-  font-size:46px
+  font-size:46px;
 }
 
 .contact p{
-  opacity:.82
+  opacity:.82;
 }
 
 .contact .btn{
   border-color:white;
-  color:white
+  color:white;
 }
 
 footer{
   padding:28px 0;
   color:var(--muted);
-  font-size:13px
+  font-size:13px;
 }
+
+
+/* MOBILE */
 
 @media(max-width:800px){
 
+  .container{
+    width:calc(100% - 28px);
+  }
+
+  .nav-inner{
+    height:68px;
+  }
+
   .nav-links{
-    display:none
+    display:none;
   }
 
   .hero{
     grid-template-columns:1fr;
     gap:44px;
-    padding:52px 0
+    padding:52px 0;
+  }
+
+  h1{
+    font-size:clamp(48px,15vw,70px);
   }
 
   .photo{
-    max-width:480px
+    max-width:480px;
   }
 
   .section-title,
   .grid,
   .two{
-    grid-template-columns:1fr
+    grid-template-columns:1fr;
+  }
+
+  .section-title{
+    gap:20px;
   }
 
   section{
-    padding:65px 0
+    padding:60px 0;
+  }
+
+  /* CONTACT MOBILE FIX */
+
+  .contact{
+    width:100%;
+    padding:34px 24px;
+    border-radius:24px;
+    overflow:hidden;
+  }
+
+  .contact .kicker{
+    font-size:11px;
+    letter-spacing:.16em;
+  }
+
+  .contact h2{
+    font-size:clamp(34px,9.5vw,42px);
+    line-height:1.04;
+    letter-spacing:-.025em;
+    margin:14px 0 22px;
+    max-width:100%;
+    overflow-wrap:normal;
+    word-break:normal;
+  }
+
+  .contact p{
+    font-size:16px;
+    line-height:1.6;
+    margin:0;
+  }
+
+  .contact .actions{
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:11px;
+    margin-top:28px;
+  }
+
+  .contact .btn{
+    width:100%;
+    text-align:center;
+    padding:12px 16px;
+    font-size:14px;
+  }
+
+  footer{
+    padding:25px 0 35px;
+    font-size:12px;
   }
 }
-</style>
 
+</style>
 </head>
 
 <body>
@@ -480,8 +553,6 @@ footer{
     <div class="grid">
 
 
-      <!-- AUTOMOTIVE EQUIPMENT STORE -->
-
       <a
         class="card"
         href="https://github.com/marijavlaisavljevic/automotive-store-management-system"
@@ -509,8 +580,6 @@ footer{
 
 
 
-      <!-- SMARTBITE -->
-
       <a
         class="card"
         href="https://github.com/marijavlaisavljevic/smartbite"
@@ -537,8 +606,6 @@ footer{
       </a>
 
 
-
-      <!-- SWEET STEPS -->
 
       <a
         class="card"
